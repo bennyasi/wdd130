@@ -64,8 +64,8 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1em;
+    grid-template-columns: repeat(12, 1fr); /* Valid grid definition */
+    gap: 1rem; /* Optional: adds spacing between grid items */
 }
 
 
@@ -91,7 +91,7 @@ footer {
     top: 1rem;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(255, 255, 2555, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     color: var(--secondary-color);
     padding: 1rem;
     font-size: 3em;
