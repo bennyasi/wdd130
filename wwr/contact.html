@@ -1,91 +1,115 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with White Water Rafting to inquire about our services or ask any questions. We're happy to assist!">
-    <title>Contact Us | White Water Rafting</title>
+    <title>Contact Us | White Water Rafting </title>
+    <meta name="description"
+        content="This Comapany is a recreation outfit saddle the responsibilty of total well being through various water games, exercise and relaxation with you, your family and friends. it is also the the best place for groups and Comapany hangout">
+    <meta name="author" content="OJO Israel">
     <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo">
+        <img src="images/logo.png" alt="super hero">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
+
     </header>
-
     <main>
-        <section class="company-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 Rafting Rd, Adventure City</p>
-            <p><strong>Phone:</strong> 123-456-7890</p>
-            <p><strong>Email:</strong> info@raftingcompany.com</p>
+        <div class="container">
+            <div class="main-content">
 
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>
-            </div>
-        </section>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form>
+                        <h1>Contact Us</h1>
+                        <fieldset class="contact-fields">
+                            <label for="name"> User Name:</label>
+                            <input type="text" id="name" name=" required">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name="email">
+                            <label><input type="radio" name="reason"></label>
+                            <label for="reason">Reason for contacting us?</label>
+                            <select name="reason" id="reason">
+                                <option value="general">General Inquiry</option>
+                                <option value="reservation">Reservation Question</option>
+                                <option value="suggestion">Website Suggestion</option>
+                            </select>
+                            <!-- <label for="content"> Type you request here:</label> -->
+                            <textarea name="comment;" cols="35" rows="10"></textarea>
+                            <div class="sign up">
+                                <input type="checkbox" name="subscribe" id="newsletter">
+                                <label for="newsletter">Please subcribe for the monthly newsletter</label>
+                            </div>
 
-        <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
-            <div class="employee">
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <figcaption>John Doe - CEO</figcaption>
-            </div>
-            <div class="employee">
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <figcaption>Jane Smith - Marketing</figcaption>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <figcaption>Mark Williams - Operations</figcaption>
-            </div>
-        </section>
-
-        <section class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="POST">
-                <label for="name"> your name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">your email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone number">your phone number:</label>
-                <input type="phone number" id="phone number" name="phone number" required>
-
-                <label for="purpose">Purpose of Inquiry:</label>
-                <div>
-                    <input type="radio" id="general" name="purpose" value="General Inquiry">
-                    <label for="general">General Inquiry</label>
-
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label>
-
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
+                        </fieldset>
+                        <button type="submit" class="submit">Send Message</button>
+                    </form>
                 </div>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <!-- Contact Information -->
+                <div class="company-info">
+                    <h2>Company Information</h2>
+                    <div class="map">
+                        <!-- Embed Google Map here -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26513.248484819273!2d3.402329539512606!3d6.445642747533413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1739088548175!5m2!1sen!2sng"
+                            width="400" height="200" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <address>30 Jubril Fasanya St, Lekki, ID 23402</address>
+                    <a href="tel:234 8166264777">(234)-816-626-4777</a>
+                    <a href="enquiry@waterrafting.org">enquiry@waterrafting.org</a>
+                </div>
+            </div>
+            <!-- Management Team -->
+            <section class="member">
+                <h3> Meet Our Management Team</h3>
+                <div class="management">
+                    <figure>
 
-                <label for="subscribe">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                        <img src="images/funke.jpg" alt="CEO">
+                        <figcaption> Greatness Etim -Chief Executive Officer</figcaption>
+                    </figure>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+                    <figure><img src="images/israel.jpg" alt="COO">
+                        <figcaption> Greacious Asi -Chief Operating Officer</figcaption>
+                    </figure>
+                    
+                    <figure><img src="images/preciuos.jpg" alt="GMD">
+                        <figcaption> Emmanuel Oqua -Group Managing Director</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
     </main>
-
     <footer>
-        <p>© 2025 White Water Rafting Company | All Rights Reserved</p>
-        <a href="https://moqups.com/your-wireframe-link" target="_blank">View Wireframe</a>
+        <p>© 2025 |White Water Rafting Comapany| Etim Benedicta | Lagos,Nigeria.</p>
+        <a href="https://app.moqups.com/9dkl0VdWw0TBiNSmXT9TiC7OlmIA70yg/view/page/a9d7706ef">Wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/Facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://X.com">
+                <img src="images/x-logo.webp" alt="X">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/Instagram.webp" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
+
 </html>
